@@ -1,0 +1,51 @@
+nav{
+    background-color: chocolate;
+    color: cornsilk;
+    position: absolute;
+    top: 0;
+    left: 0vw;
+    width: 100vw;
+    height: 100vh;
+    transition: left .5s ease-in-out;
+}
+
+
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a{
+    color: cornsilk;
+    font-size: 1.2em;
+    padding: 1em 2em;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid cornsilk;
+}
+
+nav a.actieRight{
+    padding: 1em 1.3em;
+    border-left: .7em solid cornsilk;
+    /* border-right: .7em solid cornsilk; */
+}
+
+#menu-schuiver:checked ~ nav{
+    left: -100vw;
+}
+
+#menu-schuiver{
+    display: none;
+}
+label.haal-menu{
+    padding: 1rem 2rem;
+    display: block;
+    border-bottom:2px solid cornsilk;
+    text-align: right;
+    font-size: 2em;
+}
+label.haal-menu2{
+    display: block;
+}
